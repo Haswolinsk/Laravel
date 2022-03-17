@@ -1,95 +1,101 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 de Tops5</title>
+</head>
+<body>
+    <h1 style="text-align: center;">
+        Top 5 de Tops5
+    </h1>
+        <ol>
+            <h2><li>Redes Sociais</li></h2>
+            <h4>
+                <ul type="circle">
+                    <li>Whatsapp</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Snapchat</li>
+                </ul>
+            </h4>
+            <h2><li>Jogos Competitivos</li></h2>
+            <h4>
+                <ul type="circle">
+                    <li>CS:GO</li>
+                    <li>League of Legends</li>
+                    <li>Valorant</li>
+                    <li>Free Fire</li>
+                    <li>COD</li>
+                </ul>
+            </h4>
+            <h2><li>Filmes</li></h2>
+            <h4>
+                <ul type="circle">
+                    <li>Vingadores Ultimato</li>
+                    <li>The Batman</li>
+                    <li>Sing 2</li>
+                    <li>Um lugar silencioso</li>
+                    <li>Duna</li>
+                </ul>
+            </h4>
+            <h2><li>Series</li></h2>
+            <h4>
+                <ul type="circle">
+                    <li>Brooklyn nine-nine</li>
+                    <li>Breaking Bad</li>
+                    <li>Alice in Borderland</li>
+                    <li>Stranger Things</li>
+                    <li>Sherlock</li>
+                </ul>
+            </h4>
+            <h2><li>Animes</li></h2>
+            <h4>
+                <ul type="circle">
+                    <li>One piece</li>
+                    <li>Atack on Titan</li>
+                    <li>Jujutsu Kaisen</li>
+                    <li>Demon Slayer</li>
+                    <li>Boku no Hero</li>
+                </ul>
+            </h4>
+            
+        </ol>
 
-        <title>Laravel</title>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Teste</th>
+                <th>Teste</th>
+                <th>Teste</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
+    
+    
+    
+        
+</body>
 </html>
