@@ -13,8 +13,13 @@ var fullnameUpperCase = fullname.toUpperCase();
 var fullnameLowerCase = fullname.toLowerCase();
 var fullnameCapitalize = fullname.substring(0,2);
 var fullnameSplit = fullname.split("o")
+var newFullName = fullnameSplit.join('')
 
 console.log(fullnameUpperCase);
 console.log(fullnameLowerCase);
 console.log(fullnameCapitalize);
-console.log(fullnameSplit)
+console.log(fullnameSplit);
+console.log(newFullName);
+
+let itensObrigatorios = '<1/3/4>'
+
