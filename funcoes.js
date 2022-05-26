@@ -1,3 +1,40 @@
+//uma função serve para encurtar ou da retorno a algum item 
+
+//função literal
+function nomeDaFuncao(parametro1, parametro2, parametro3){
+    //escopo da função
+    return "Salve!"
+}
+
+const variavel = 'ola';
+const variavel2 = 2;
+const variavel3 = true;
+const variavel4 = () => {
+    //função arrow( () => {} )
+}
+
+let contador=0;
+function porta(){
+    contador++;
+}
+const portaDeSaida= ()=>{
+    --contador;
+}
+
+function divisao(numero){
+    if (numero % 3 ==0){
+        portaDeSaida();
+    }else{
+        porta();
+    }
+
+}
+for(let numero = 0; numero < 100; numero++){
+   divisao(numero);
+}
+
+console.log(contador);
+
 /* const a = 10;
 const b = 20;
 const abSoma = soma(a, b);
@@ -27,7 +64,7 @@ function divisao(a, b){
 let a = 5;
 let a_aux = 0;
 let a_fat = 0;
-console.log(fatorial(a));
+
 
 function fatorial(a){
     let valor = 0;
@@ -52,4 +89,4 @@ function soma(a, b){
     return c;
 }
 const resultado = soma(1,2);
-console.log(resultado);
+
