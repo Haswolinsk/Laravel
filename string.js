@@ -15,6 +15,7 @@ var fullnameCapitalize = fullname.substring(0,2);
 var fullnameSplit = fullname.split("o")
 var newFullName = fullnameSplit.join('')
 
+console.log(`Meu nome é ${firtsname} ${lastname} e tenho ${age} anos`);
 console.log(fullnameUpperCase);
 console.log(fullnameLowerCase);
 console.log(fullnameCapitalize);

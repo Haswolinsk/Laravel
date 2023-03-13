@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ToDoList</h1>
+        <form class="inputs" >
+            <div class="sub-input">
+                <input type="text" id="Title" placeholder="Titulo" size="20">
+                <input type="date" id="DeadLine">
+                <input class='button' type="reset" value="Limpar" onmouseover="PointerEvent">
+                <input class="button" type="button" value="Adicionar" onclick="newTitle()" onmouseover="PointerEvent" style="margin-left: 0px;"><br>
+                <!-- <button onclick=newTitle()>+</button><br> -->
+            </div>
+            <textarea id="Desc" cols="300" rows="6" placeholder="Descrição..." style="resize: none; font-size: 20px; font-family: verdana; margin-bottom: 5%;"></textarea>
+        </form>
+
+        <div class="todolist">
+            <div id="list" style="height: 320px; background-color: bisque;">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./src/js/task.js"></script>
+</html>

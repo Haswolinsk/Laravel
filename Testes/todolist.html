@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes</title>
+</head>
+<body>
+    <div>
+        <div class="Forms">
+            <form name="todoList" action="" method="post">
+                <label>Titulo</label>
+                <input type="text" name="title" id="task"><br>
+                <label>Descrição</label>
+                <input type="text" name="Description" id="Descrip"><br>
+                <!-- <input type="datetime-local" name="" id="">
+                <input type="" name="" id=""> -->
+                <input type="button" name="Salvar" value="Salvar" onclick="Processar()">
+                <input type="reset" name="Limpar" value="Limpar">
+                <!-- <input type="button" name="Atualizar" value="Alteração" onclick="Alteracao()"> -->
+                <hr>
+            </form>
+        </div>
+        <div>
+            <h1>ToDoList</h1>
+            <ul id="Title">
+                
+            </ul>
+            <ul id="Description">
+
+            </ul>
+        </div>
+    </div>
+    
+    
+    <script>
+        var ul = document.getElementById("Title");
+        var li;
+        var itemTitle;
+        var item;
+
+        Processar = function(){
+            if(document.getElementById("task").value != ""){
+                item = document.getElementById("task");
+                itemTitle = ul.childElementCount;
+                li = createItemEL(item.value,itemTitle);
+
+                li.appendChild(createRemoveTaskBtn(itemTitle));
+                ul.appendChild(li);
+            }
+        }
+
+        removeTask = function(itemTitle){
+            for (let i = 0; i < ul.children.length; i++) {
+                if (ul.children[i].getAttribute("index") == itemTitle){
+                    ul.children[i].remove();
+                }
+                
+            }
+        }
+
+        createItemEL = function(itemValue, itemTitle){
+            let li = document.createElement("li");
+
+            li.setAttribute("index", itemTitle);
+            li.appendChild(document.createTextNode(itemValue));
+
+            return li;
+        }
+
+        createRemoveTaskBtn = function(){
+            let btn = document.createElement("button");
+
+            btn.setAttribute("onclick", "removeTask("+itemTitle+")");
+            btn.innerHTML ="Apagar";
+            
+            return btn;
+        }
+
+/* ------------------------------------------------------------------------------------------------- */
+
+        var ut = document.getElementById("Description");
+        var lista;
+        var itemTitle;
+        var item;
+
+        Processar = function(){
+            if(document.getElementById("Descrip").value != ""){
+                item = document.getElementById("Descrip");
+                itemTitle = ut.childElementCount;
+                lista = createItemEL(item.value,itemTitle);
+
+                lista.appendChild(createRemoveTaskBtn(itemTitle));
+                ut.appendChild(lista);
+            }
+        }
+
+        removeTask = function(itemTitle){
+            for (let i = 0; i < ut.children.length; i++) {
+                if (ut.children[i].getAttribute("index") == itemTitle){
+                    ut.children[i].remove();
+                }
+                
+            }
+        }
+
+        createItemEL = function(itemValue, itemTitle){
+            let lista = document.createElement("lista");
+
+            lista.setAttribute("index", itemTitle);
+            lista.appendChild(document.createTextNode(itemValue));
+
+            return lista;
+        }
+
+        createRemoveTaskBtn = function(){
+            let btn = document.createElement("button");
+
+            btn.setAttribute("onclick", "removeTask("+itemTitle+")");
+            btn.innerHTML ="Apagar";
+            
+            return btn;
+        }
+
+    </script>
+    
+</body>
+</html>
